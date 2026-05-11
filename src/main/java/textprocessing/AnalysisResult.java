@@ -51,8 +51,8 @@ public class AnalysisResult {
     public int getTotalDigits() { return totalDigits; }
     public void setTotalDigits(int totalDigits) { this.totalDigits = totalDigits; }
 
-    public int[] getVowelCounts() { return vowelCounts; }
-    public void setVowelCounts(int[] vowelCounts) { this.vowelCounts = vowelCounts; }
+    public int[] getVowelCounts() { return vowelCounts.clone(); }
+    public void setVowelCounts(int[] vowelCounts) { this.vowelCounts = vowelCounts == null ? new int[5] : vowelCounts.clone(); }
 
     public int getTotalVowels() { return totalVowels; }
     public void setTotalVowels(int totalVowels) { this.totalVowels = totalVowels; }

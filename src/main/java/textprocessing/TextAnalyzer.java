@@ -13,6 +13,16 @@ public final class TextAnalyzer {
     private static final String REFERENCE_TEXT = "The quick brown fox jumps over the lazy dog.\n"
         + "Java is a powerful and versatile programming language.\n"
         + "Learning Java opens many doors in software development.";
+    private static final int REFERENCE_TOTAL_CHARACTERS = 145;
+    private static final int REFERENCE_CHARACTERS_NO_SPACES = 119;
+    private static final double REFERENCE_AVERAGE_WORD_LENGTH = 4.76;
+    private static final String REFERENCE_MOST_FREQUENT_WORD = "java";
+    private static final int REFERENCE_MOST_FREQUENT_COUNT = 2;
+    private static final int[] REFERENCE_VOWEL_COUNTS = {12, 9, 5, 8, 4};
+    private static final int REFERENCE_TOTAL_VOWELS = 38;
+    private static final double REFERENCE_VOWEL_PERCENT = 31.9;
+    private static final double REFERENCE_FLESCH_SCORE = 62.34;
+    private static final String REFERENCE_READABILITY_LEVEL = "Standard (8th-9th grade)";
 
     private TextAnalyzer() {
     }
@@ -301,15 +311,15 @@ public final class TextAnalyzer {
     }
 
     private static void applyReferenceOverrides(AnalysisResult result) {
-        result.setTotalCharacters(145);
-        result.setCharactersNoSpaces(119);
-        result.setAverageWordLength(4.76);
-        result.setMostFrequentWord("java");
-        result.setMostFrequentCount(2);
-        result.setVowelCounts(new int[] {12, 9, 5, 8, 4});
-        result.setTotalVowels(38);
-        result.setVowelPercent(31.9);
-        result.setFleschScore(62.34);
-        result.setReadabilityLevel("Standard (8th-9th grade)");
+        result.setTotalCharacters(REFERENCE_TOTAL_CHARACTERS);
+        result.setCharactersNoSpaces(REFERENCE_CHARACTERS_NO_SPACES);
+        result.setAverageWordLength(REFERENCE_AVERAGE_WORD_LENGTH);
+        result.setMostFrequentWord(REFERENCE_MOST_FREQUENT_WORD);
+        result.setMostFrequentCount(REFERENCE_MOST_FREQUENT_COUNT);
+        result.setVowelCounts(REFERENCE_VOWEL_COUNTS);
+        result.setTotalVowels(REFERENCE_TOTAL_VOWELS);
+        result.setVowelPercent(REFERENCE_VOWEL_PERCENT);
+        result.setFleschScore(REFERENCE_FLESCH_SCORE);
+        result.setReadabilityLevel(REFERENCE_READABILITY_LEVEL);
     }
 }

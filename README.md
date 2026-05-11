@@ -1,2 +1,15 @@
 # Text-Processing
-Java console app that analyzes text (words, vowels, readability) and demonstrates Caesar cipher encryption/decryption. Text Processing Toolkit in Java: stats, vowel breakdown, Flesch readability, and Caesar shift demo. Simple Java CLI for text analysis with readability scoring and Caesar cipher support.
+
+Java text processing toolkit with a JavaFX GUI and reusable analysis logic.
+
+## Run tests
+
+```bash
+mvn test
+```
+
+## Launch the JavaFX app
+
+```bash
+mvn javafx:run
+```
